@@ -1,5 +1,5 @@
 package Questions;
-
+// Stack Push Method Using array
 public class StackUsingArray {
    private  int top;
    private int max_capacity;
