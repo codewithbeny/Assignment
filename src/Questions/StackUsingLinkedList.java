@@ -23,9 +23,24 @@ public class StackUsingLinkedList {
         System.out.println("Added Successfully");
         size++;
     }
+    public int pop() {
+        int response = 0;
 
+            // Single node
+            response = top.getData();
+            // size--;
+            top = top.getNext();
+
+
+
+        return response;
+    }
     public static void main(String[] args) {
       StackUsingLinkedList stackUsingLinkedList=new StackUsingLinkedList();
       stackUsingLinkedList.push(10);
+        stackUsingLinkedList.push(20);
+        stackUsingLinkedList.push(30);
+        System.out.println(stackUsingLinkedList.pop());
+        System.out.println(stackUsingLinkedList.pop());
     }
 }
