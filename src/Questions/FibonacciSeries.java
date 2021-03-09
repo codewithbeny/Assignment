@@ -18,10 +18,10 @@ public class FibonacciSeries {
         int b = 1;
         int sum=0;
         for (int i = 1; i < no; i++) {
-            System.out.println(a);
             sum = a + b;
             a = b;
             b = sum;
+            System.out.println(sum);
         }
     }
     public void with_recursion(int no){
